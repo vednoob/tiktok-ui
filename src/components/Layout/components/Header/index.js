@@ -9,9 +9,6 @@ import {
   faEarthAsia,
   faCircleQuestion,
   faKeyboard,
-  faMessage,
-  faCloudArrowUp,
-  faPaperPlane,
   faUser,
   faCoins,
   faGear,
@@ -27,6 +24,8 @@ import styles from './Header.module.scss';
 import images from '~/assets/images';
 import AccountItem from '../AccountItem';
 import Menu from '~/components/Popper/Menu';
+import { InboxIcon, SendMesageIcon, UploadIcon } from '~/components/Icon';
+import Image from '~/components/Image';
 
 // do not clear this line -> bind object styles to classNames and return a function to cx.
 // So when using cx to create a claas
@@ -149,17 +148,17 @@ function Header() {
             <>
               <Tippy content="Upload Video" placement="bottom">
                 <button className={cx('action-btn')}>
-                  <FontAwesomeIcon icon={faCloudArrowUp} />
+                  <UploadIcon />
                 </button>
               </Tippy>
               <Tippy content="Send Message" placement="bottom">
                 <button className={cx('action-btn')}>
-                  <FontAwesomeIcon icon={faPaperPlane} />
+                  <SendMesageIcon />
                 </button>
               </Tippy>
               <Tippy content="Inbox" placement="bottom">
                 <button className={cx('action-btn')}>
-                  <FontAwesomeIcon icon={faMessage} />
+                  <InboxIcon />
                 </button>
               </Tippy>
             </>
@@ -171,10 +170,11 @@ function Header() {
           )}
           <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
             {currentUser ? (
-              <img
-                src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/58cdbd6e0396d34f53f208b372047ebb~c5_100x100.jpeg?x-expires=1676365200&x-signature=z6Z%2FNfnQ3edx4Vadvb07rMgBl0I%3D"
+              <Image
+                src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/1e43a749fe08f0cd9db39f4dc6a24298~c5_720x720.jpeg?x-expires=1676379600&x-signature=EFRIl5EOHwjxGGPEoUtUEB6FQEA%3D"
                 className={cx('user-avatar')}
                 alt="Nguyen Van A"
+                // fallback="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/f7abdc439dd0fc60479f31e0f7d78b98~c5_100x100.jpeg?x-expires=1676383200&x-signature=no6YSXZfafUT%2FmmBPspWyn%2BIros%3D"
               />
             ) : (
               <button className={cx('more-btn')}>
