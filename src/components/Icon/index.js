@@ -34,70 +34,36 @@ export const InboxIcon = ({ width = '3.2rem', height = '3.2rem', className }) =>
   </svg>
 );
 
-export const UploadIcon = ({ width = '2.2rem', height = '2.2rem', className }) => (
+export const UploadIcon = ({ width = '3.2rem', height = '3.2rem', className }) => (
   <svg
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 22 22"
+    className={className}
     width={width}
     height={height}
-    className={className}
+    viewBox="0 0 32 32"
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      fill="black"
-      d="M0 22V11C0 4.925 4.925 0 11 0s11 4.925 11 11v11H0zm19.25-2.75V11A8.25 8.25 0 007.055 3.753a8.243 8.243 0 018.09 3.632A5.479 5.479 0 0116.5 11v8.25h2.75zM7.946 6.425a5.5 5.5 0 00-5.196 5.492v7.333H5.5V11c0-1.908.971-3.589 2.446-4.575zm5.008 2.64A2.75 2.75 0 008.25 11v8.25h5.5v-7.333c0-1.044-.291-2.02-.796-2.852z"
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M22.1571 13.8359L21.9247 12.3786C21.4686 9.51917 18.9876 7.3335 16 7.3335C12.6863 7.3335 10 10.0197 9.99996 13.3334L10.0011 15.2304L8.11578 15.3398C6.19293 15.4513 4.66663 17.0482 4.66663 19.0002C4.66663 21.0252 6.30825 22.6668 8.33329 22.6668H15.3333V17.0813L14.1785 18.236C13.9182 18.4964 13.4961 18.4964 13.2357 18.236L12.7643 17.7646C12.504 17.5043 12.504 17.0822 12.7643 16.8218L15.862 13.7242C16.1223 13.4638 16.5444 13.4638 16.8048 13.7242L19.9024 16.8218C20.1628 17.0822 20.1628 17.5043 19.9024 17.7646L19.431 18.236C19.1706 18.4964 18.7485 18.4964 18.4882 18.236L17.3333 17.0811V22.6668H23C25.3932 22.6668 27.3333 20.7267 27.3333 18.3335C27.3333 16.151 25.7179 14.3423 23.6181 14.0437L22.1571 13.8359ZM8.33329 24.6668H15.3333H17.3333H23C26.4978 24.6668 29.3333 21.8313 29.3333 18.3335C29.3333 15.1411 26.9714 12.5005 23.8997 12.0636C23.2913 8.24881 19.9861 5.3335 16 5.3335C11.5817 5.3335 7.99996 8.91522 7.99996 13.3335L7.99996 13.3431C5.0255 13.5157 2.66663 15.9824 2.66663 19.0002C2.66663 22.1298 5.20368 24.6668 8.33329 24.6668Z"
     ></path>
+  </svg>
+);
+
+export const SearchIcon = ({ width = '2.4rem', height = '2.4rem', className }) => (
+  <svg
+    width={width}
+    className={className}
+    height={height}
+    viewBox="0 0 48 48"
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+  >
     <path
-      fill="url(#eh-header-logo_svg__paint0_linear_1104_31608)"
-      d="M0 22V11C0 4.925 4.925 0 11 0s11 4.925 11 11v11H0zm19.25-2.75V11A8.25 8.25 0 007.055 3.753a8.243 8.243 0 018.09 3.632A5.479 5.479 0 0116.5 11v8.25h2.75zM7.946 6.425a5.5 5.5 0 00-5.196 5.492v7.333H5.5V11c0-1.908.971-3.589 2.446-4.575zm5.008 2.64A2.75 2.75 0 008.25 11v8.25h5.5v-7.333c0-1.044-.291-2.02-.796-2.852z"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M22 10C15.3726 10 10 15.3726 10 22C10 28.6274 15.3726 34 22 34C28.6274 34 34 28.6274 34 22C34 15.3726 28.6274 10 22 10ZM6 22C6 13.1634 13.1634 6 22 6C30.8366 6 38 13.1634 38 22C38 25.6974 36.7458 29.1019 34.6397 31.8113L43.3809 40.5565C43.7712 40.947 43.7712 41.5801 43.3807 41.9705L41.9665 43.3847C41.5759 43.7753 40.9426 43.7752 40.5521 43.3846L31.8113 34.6397C29.1019 36.7458 25.6974 38 22 38C13.1634 38 6 30.8366 6 22Z"
     ></path>
-    <path
-      fill="url(#eh-header-logo_svg__paint1_radial_1104_31608)"
-      fillOpacity="0.6"
-      d="M0 22V11C0 4.925 4.925 0 11 0s11 4.925 11 11v11H0zm19.25-2.75V11A8.25 8.25 0 007.055 3.753a8.243 8.243 0 018.09 3.632A5.479 5.479 0 0116.5 11v8.25h2.75zM7.946 6.425a5.5 5.5 0 00-5.196 5.492v7.333H5.5V11c0-1.908.971-3.589 2.446-4.575zm5.008 2.64A2.75 2.75 0 008.25 11v8.25h5.5v-7.333c0-1.044-.291-2.02-.796-2.852z"
-    ></path>
-    <path
-      fill="url(#eh-header-logo_svg__paint2_radial_1104_31608)"
-      fillOpacity="0.6"
-      d="M0 22V11C0 4.925 4.925 0 11 0s11 4.925 11 11v11H0zm19.25-2.75V11A8.25 8.25 0 007.055 3.753a8.243 8.243 0 018.09 3.632A5.479 5.479 0 0116.5 11v8.25h2.75zM7.946 6.425a5.5 5.5 0 00-5.196 5.492v7.333H5.5V11c0-1.908.971-3.589 2.446-4.575zm5.008 2.64A2.75 2.75 0 008.25 11v8.25h5.5v-7.333c0-1.044-.291-2.02-.796-2.852z"
-    ></path>
-    <defs>
-      <radialGradient
-        id="eh-header-logo_svg__paint1_radial_1104_31608"
-        cx="0"
-        cy="0"
-        r="1"
-        gradientTransform="rotate(137.121 8.563 5.382) scale(19.105)"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop stopColor="#FF00E5"></stop>
-        <stop offset="1" stopColor="#FF00E5" stopOpacity="0"></stop>
-      </radialGradient>
-      <radialGradient
-        id="eh-header-logo_svg__paint2_radial_1104_31608"
-        cx="0"
-        cy="0"
-        r="1"
-        gradientTransform="rotate(-40.03 25.148 1.387) scale(16.3248)"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop stopColor="#00FFFF"></stop>
-        <stop offset="1" stopColor="#000AFF" stopOpacity="0"></stop>
-      </radialGradient>
-      <linearGradient
-        id="eh-header-logo_svg__paint0_linear_1104_31608"
-        x1="0"
-        x2="22"
-        y1="0"
-        y2="22"
-        gradientUnits="userSpaceOnUse"
-      >
-        <stop stopColor="#FF698D" stopOpacity="0.806"></stop>
-        <stop offset="0.318" stopColor="#926BFF"></stop>
-        <stop offset="0.538" stopColor="#294FFF" stopOpacity="0.85"></stop>
-        <stop offset="0.807" stopColor="#0075FF"></stop>
-        <stop offset="1" stopColor="#00D1FF"></stop>
-      </linearGradient>
-    </defs>
   </svg>
 );
