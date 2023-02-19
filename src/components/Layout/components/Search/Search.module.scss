@@ -19,6 +19,7 @@
     font-size: 1.6rem;
     background-color: transparent;
     caret-color: var(--primary);
+    font-family: var(--font-family);
   }
 
   input:not(:placeholder-shown) ~ .search-btn {
@@ -70,6 +71,9 @@
 }
 
 .search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: var(--search-button-width);
   height: 100%;
   border-top-right-radius: var(--search-border-radius);
